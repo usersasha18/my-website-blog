@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <link rel="stylesheet" href="./css/recommed.css">
+    <title>Document</title>
+</head>
+<body class="">
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#">FilmApp</a>
+            </div>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-link"><a href="">films</a></li>
+                    <li class="nav-link"><a href="">contacts</a></li>
+                </ul>
+            </nav>
+            <div class="theme-button">
+                <button id="changeTheme">theme</button>
+            </div>
+        </div>
+    </header>
+    <section class="search-section">
+        <div class="container">
+            <h1 class="search-title">Enter movie title</h1>
+            <form>
+                <input type="text" placeholder="title...">
+                <button id="search-movie">search...</button>
+            </form>
+        </div>
+    </section>
+    <section class="recommended-titles">
+        <div class="container">
+            <h2 class="recommed-title">Recommeded movie</h2>
+            <div id="output-movie">
+                <!-- js -->
+            </div>
+        </div>
+    </section>
+    <script src="./js/changeTheme.js"></script>
+    <script src="./js/movieData.js"></script>
+</body>
+</html>

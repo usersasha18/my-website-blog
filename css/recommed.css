@@ -1,0 +1,43 @@
+.recommended-titles {
+    padding-bottom: 2rem ;
+}
+.recommed-title {
+    padding-bottom: 2rem;
+}
+
+
+.movie-image {
+    width: 300px;
+    height:auto;  
+    overflow: hidden; 
+}
+
+.inner-image {
+    width: 100%; 
+    height: auto; 
+    padding-bottom: 1rem;
+}
+button {
+    background-color: var(--button-search);
+    border: none;
+    padding: 0.5rem;
+}
+button a {
+    color: var(--button-text-color);
+}
+
+.movie-content {
+    width: 300px;
+}
+
+.inner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#output-movie {
+    display: flex;
+    overflow: scroll;
+    gap: 2rem;
+}
