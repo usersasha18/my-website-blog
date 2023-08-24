@@ -32,6 +32,9 @@ a {
     transition: all .4s ease-in;
 }
 
+button { 
+    color: var(--text-color);
+}
   
   /* Применение переменных к элементам */
 body {

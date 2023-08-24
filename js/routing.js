@@ -1,0 +1,5 @@
+const routs = [
+    {
+        path: "/about"
+    }
+]
