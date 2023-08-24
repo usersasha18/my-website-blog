@@ -4,12 +4,12 @@ const form = document.querySelector('form');
 const searchButton = form.querySelector('button');
 const sortedPanel = document.querySelector('.sorted-panel');
 
-const api = `https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword`;
+let apiToken = `https://kinopoiskapiunofficial.tech/api/v2.1/films/search-by-keyword`;
 const apiKey = 'd0c8e808-df7c-4341-9910-723daffd766e';
 
 async function getMovieByTitle(keyword) {
     try {
-        const response = await fetch(api + `?keyword=${keyword}&page=1`, {
+        const response = await fetch(apiToken + `?keyword=${keyword}&page=1`, {
             method: 'GET',
             headers: {
                 'X-API-KEY': apiKey,
@@ -25,6 +25,7 @@ async function getMovieByTitle(keyword) {
 
 // функция, которая делает запрос на сервер и возвращает json
 function outputResponse(keyword ,movies) {
+
     const title = `<h1>Фильмы найденные по запросу ${keyword}</h1>`
     const sortPanel =
     `
@@ -91,7 +92,8 @@ function outputResponse(keyword ,movies) {
 //функция, которая принимает ключивое слово и массив с фильмами и выводит результат  
 
 // функция, которая получает данные с инпута и по клику вызывает функцию рендеринга
-function getValuesFromInput() {
+function getValuesFromInput(event) {
+    event.preventDefault();
     const searchBar = form.querySelector('input');
     let searchBarValue = searchBar.value;
     if(!searchBarValue) {

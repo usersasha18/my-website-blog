@@ -1,14 +1,14 @@
 const outputMovie = document.querySelector('#output-movie');
 
-// const api = 'https://kinopoiskapiunofficial.tech/api/v2.2/films/premieres?year=2022&month=OCTOBER';
-const apiKey = 'd0c8e808-df7c-4341-9910-723daffd766e';
+let apiNext = 'https://kinopoiskapiunofficial.tech/api/v2.2/films/premieres?year=2022&month=MARCH';
+const apiKeyData = 'd0c8e808-df7c-4341-9910-723daffd766e';
 
 async function getData() {
     try {
-        fetch([], {
+        fetch(apiNext, {
             method: 'GET',
             headers: {
-                'X-API-KEY': apiKey,
+                'X-API-KEY': apiKeyData,
                 'Content-Type': 'application/json',
             },
         })

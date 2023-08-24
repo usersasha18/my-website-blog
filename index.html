@@ -12,12 +12,12 @@
     <header class="header" id="header">
         <div class="container">
             <div class="logo">
-                <a href="#">FilmApp</a>
+                <a href="/index.html">FilmApp</a>
             </div>
             <nav>
                 <ul class="nav">
-                    <li class="nav-link"><a href="#/about">about</a></li>
-                    <li class="nav-link"><a href="#/contacts">contacts</a></li>
+                    <li class="nav-link"><a href="/about.html">about</a></li>
+                    <li class="nav-link"><a href="/contacts.html">contacts</a></li>
                 </ul>
             </nav>
             <div class="theme-button">
@@ -25,35 +25,39 @@
             </div>
         </div>
     </header>
-    <section class="search-section">
-        <div class="container">
-            <h1 class="search-title">Enter movie keyword and get result</h1>
-            <form>
-                <input type="text" placeholder="title...">
-                <button id="search-movie">search...</button>
-            </form>
-            <h1 class="title-movie">
-                <!-- js -->
-            </h1>
-            <div class="sorted-panel">
-                <!-- js -->
+    <div class="container">
+        <div class="content-rout">
+            <section class="search-section">
+                <div class="container">
+                    <h1 class="search-title">Enter movie keyword and get result</h1>
+                    <form>
+                        <input type="text" placeholder="title...">
+                    <button id="search-movie">search...</button>
+                </form>
+                <h1 class="title-movie">
+                    <!-- js -->
+                </h1>
+                <div class="sorted-panel">
+                    <!-- js -->
+                </div>
+                <div class="wrapper-search">
+                    <!-- js -->
+                </div>
             </div>
-            <div class="wrapper-search">
-                <!-- js -->
+        </section>
+        <section class="recommended-titles">
+            <div class="container">
+                <h2 class="recommed-title">Recommeded movie</h2>
+                <div id="output-movie">
+                    <!-- js -->
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="recommended-titles">
-        <div class="container">
-            <h2 class="recommed-title">Recommeded movie</h2>
-            <div id="output-movie">
-                <!-- js -->
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
+</div>
     <script src="./js/searchByTitle.js"></script>
     <script src="./js/routing.js"></script>
     <script src="./js/changeTheme.js"></script>
-    <!-- <script src="./js/movieData.js"></script> -->
+    <script src="./js/movieData.js"></script>
 </body>
 </html>
