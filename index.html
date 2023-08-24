@@ -16,8 +16,8 @@
             </div>
             <nav>
                 <ul class="nav">
-                    <li class="nav-link"><a href="">films</a></li>
-                    <li class="nav-link"><a href="">contacts</a></li>
+                    <li class="nav-link"><a href="#/about">about</a></li>
+                    <li class="nav-link"><a href="#/contacts">contacts</a></li>
                 </ul>
             </nav>
             <div class="theme-button">
@@ -27,11 +27,17 @@
     </header>
     <section class="search-section">
         <div class="container">
-            <h1 class="search-title">Enter movie title</h1>
+            <h1 class="search-title">Enter movie keyword and get result</h1>
             <form>
                 <input type="text" placeholder="title...">
                 <button id="search-movie">search...</button>
             </form>
+            <h1 class="title-movie">
+                <!-- js -->
+            </h1>
+            <div class="wrapper-search">
+                <!-- js -->
+            </div>
         </div>
     </section>
     <section class="recommended-titles">
@@ -42,7 +48,9 @@
             </div>
         </div>
     </section>
+    <script src="./js/searchByTitle.js"></script>
+    <script src="./js/routing.js"></script>
     <script src="./js/changeTheme.js"></script>
-    <script src="./js/movieData.js"></script>
+    <!-- <script src="./js/movieData.js"></script> -->
 </body>
 </html>

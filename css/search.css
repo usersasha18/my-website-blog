@@ -7,6 +7,9 @@
     color: var(--text-color);
     padding-bottom: 1rem;
 }
+form {
+    margin-bottom: 2rem;
+}
 
 form > input {
     padding: 0.5rem;
@@ -18,4 +21,16 @@ form > button {
     background-color: var(--button-search);
     color: var(--button-text-color);
     cursor: pointer;
+}
+
+.wrapper-search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+}
+
+.title-movie {
+    margin-bottom: 2rem;
 }
